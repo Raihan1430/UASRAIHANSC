@@ -60,5 +60,9 @@ bot.on('message',(msg) =>{
 state = 0;
     }
 })
+// router
+router.get('/prediction/:i/:r', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
-module.exports = r;
+module.exports = router;
